@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xforms="http://www.w3.org/2002/xforms/cr" xmlns:my="http://example.org">
+	<head>
+		<title>XForms sample</title>
+		<style type="text/css">
+			body { padding: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+			/*
+			input::value {
+				display: block;
+				color: black;
+				border: 2px inset white;
+				padding: 1px;
+				margin-left: 2px;
+				background-color: #ffffe8;
+			}
+			textarea::value {
+				display: block;
+				color: black;
+				border: 2px inset white;
+				padding: 1px;
+				margin-left: 2px;
+				background-color: #ffffe8;
+				white-space: pre;
+			}
+			output::value {
+				white-space: pre;
+			}
+			.fixed::value {
+				margin-left: 2px;
+				height: 100px;
+				overflow: auto;
+			}
+			label {
+				font-weight: normal;
+				margin-bottom: 3px;
+				margin-top: 0.75em;
+			}
+			*/
+		</style>
+
+		<!-- The XForms Model -->
+		<xforms:model>
+			<xforms:instance>
+				<my:EditResourceGroup actionType="edit" />
+			</xforms:instance>
+		</xforms:model>
+
+	</head>
+	<body>
+		<h5>XForms select1 example</h5>
+		<xforms:select1 appearance="minimal" ref="/my:EditResourceGroup/@actionType">
+			<xforms:label>Action Type:</xforms:label>
+			<xforms:item>
+				<xforms:label>Edit</xforms:label>
+				<xforms:value>edit</xforms:value>
+			</xforms:item>
+			<xforms:item>
+				<xforms:label>Keep</xforms:label>
+				<xforms:value>keep</xforms:value>
+			</xforms:item>
+			<xforms:item>
+				<xforms:label>Replace</xforms:label>
+				<xforms:value>replace</xforms:value>
+			</xforms:item>
+		</xforms:select1>
+	</body>
+</html>

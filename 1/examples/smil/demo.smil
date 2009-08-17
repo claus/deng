@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language">
+	<head>
+	   <meta name="title" content="Animations"/>
+	   <layout>
+			<root-layout width="800" height="600" backgroundColor="black"/>
+			<region id="face1" top="40" left="0" width="50" height="50" z-index="3" fit="hidden"/>
+			<region id="face3" top="0" left="0" width="200" height="250" z-index="4" fit="hidden"/>
+			<region id="face4" top="100" left="100" width="200" height="200" z-index="2" fit="hidden"/>
+	   </layout>
+	</head>
+	<body>
+
+		<par dur="indefinite">
+			<img id="smallfly1" region="face1" src="deng.jpg" repeatCount="indefinite">
+				<animate id="ib1" targetElement="face1" attributeName="top" from="-50" to="200" dur="1s"/>
+			</img>
+			<img id="smallfly2" region="face1" src="deng.jpg" repeatCount="indefinite">
+				<animate id="ib2" targetElement="face1" attributeName="left" from="-50" to="300" dur="3s"/>
+			</img>
+			<text id="smallfly3" region="face3" src="test.html" repeatCount="indefinite">
+				<animate id="tb3" targetElement="face3" attributeName="left" from="350" to="150" dur="10s"/>
+			</text>
+			<img id="smallfly4" region="face4" src="deng.jpg" repeatCount="indefinite">
+				<animate id="ib3" targetElement="face4" attributeName="width" from="100" to="1" dur="1s"/>
+			</img>
+		</par>
+
+	</body>
+</smil>

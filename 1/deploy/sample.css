@@ -1,0 +1,14 @@
+html, body {
+	background-color: #f8f8f8;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+}
+h1 {
+	font-size: 1.3em;
+}
+h2 {
+	font-size: 1.15em;
+}
+a {
+	color: blue;
+}

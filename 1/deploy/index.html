@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>DENG Modular XML Browser</title>
+		<script type="text/javascript" src="swfobject.js"></script>
+		<style type="text/css">
+			body { font: .8em/1.3em Arial,Helvetica,sans-serif; }
+			h1 { font-size: 11pt; }
+			p { margin-top: 0; }
+			#deng {
+				border: solid 1px #ccc;
+				width: 400px;
+				height: 340px;
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>DENG Deployment Kit</h1>
+		<p>Sample usage:</p>
+		<div id="deng">
+			<strong>Flash Player required</strong>
+		</div>
+		<script type="text/javascript">
+			// <![CDATA[
+			var so = new SWFObject("dengcontainer.swf", "dengcontainer", "400", "340", "6", "#ffffff");
+			so.addVariable("documentURL", "sample.html");
+			so.write("deng");
+			// ]]>
+		</script>
+	</body>
+</html>
